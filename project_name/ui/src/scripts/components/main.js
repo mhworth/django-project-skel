@@ -10,6 +10,7 @@ var Routes = (
   </Route>
 );
 
+var content = document.getElementById('app');
 Router.run(Routes, function (Handler) {
   React.render(<Handler/>, content);
 });

@@ -4,7 +4,8 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public')
 
-DEBUG = False
+DEBUG = True
+DEVELOPMENT = True
 TEMPLATE_DEBUG = True
 
 ADMINS = (
@@ -123,6 +124,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     '{{ project_name }}.api',
+    '{{ project_name }}.core',
     'dj_static',
     'rest_framework'
 )
