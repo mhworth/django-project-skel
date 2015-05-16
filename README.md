@@ -36,7 +36,16 @@ Install nodejs, npm, and grunt. nodejs and npm can be installed from the node js
 npm install -g grunt
 ```
 
-Once both of those are installed, run the following commands to install the dev dependencies:
+
+
+That's it! You're ready to create your first project.
+
+# Starting a new project
+Run the following command (substitute "newproject" with whatever you want your project name to be):
+```
+django-admin startproject --template=https://github.com/mhworth/django-project-skel/archive/master.zip newproject
+```
+Once your project has been created, run the following commands to install the dev dependencies:
 
 ```
 cd <your project root>
@@ -45,7 +54,7 @@ cd <project_name>/ui
 npm install
 ```
 
-That's it!
+That's all; you're ready to develop.
 
 # Developing
 
